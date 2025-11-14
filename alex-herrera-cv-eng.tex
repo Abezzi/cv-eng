@@ -1,0 +1,89 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+\usepackage{XCharter}               % set font. comment this line out if you want to use the default LaTeX font Computer Modern
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt} %%% Test various topsep values to fix vertical spacing errors
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\Huge Alex Herrera Saravia}
+
+\vspace{5pt}
+
+% contact information
+\centerline{Talca, Maule Region, Chile}
+\centerline{\href{mailto:abezzi@outlook.cl}{abezzi@outlook.cl} | +569 8616 5263 | \href{https://alexherrera.cl}{alexherrera.cl} | \href{https://github.com/Abezzi}{github.com/abezzi} | \href{https://linkedin.com/in/alex-herrera-saravia/}{linkedin.com/in/alex-herrera-saravia}}
+
+\vspace{-10pt}
+
+% skills section
+\section*{Skills}
+Python, Django, React, React-native, TypesCript, Redux Toolkit, TailwindCSS, VueJs, NodeJS, PHP, Docker, PostgreSQL, MySQL, Unit Tests, JavaScript, HTML, CSS, bootstrap, TypeORM, Problem Solving, Data Structures, Linux, Agile, Vim, Netlify, Git, Insomnia, Advanced English.  \\
+
+\vspace{-6.5pt}
+
+% experience section
+\section*{Experience}
+\textbf{Software Developer,} {OneConsultores SpA} -- Talca, Maule Region, Chile \hfill October 2021 -- May 2023 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Developed the courthouse module, which required digitizing the management of judicial procedures. To achieve this, I gathered the requirements and designed a virtual access system using VueJS, TypeORM, NodeJS, and PostgreSQL. This system enabled natural persons to check the status of their procedures and allowed officials to register information, documents, and judicial resolutions, resulting in increased process speed, greater user convenience, and data integrity through digital backups.
+  \item Optimized the production system for circulation permits, which required greater stability and functionalities. I took on the task of implementing improvements, such as displaying documents directly from the entry form, migrating the email manager, and fixing errors using VueJS and KumbiaPHP, achieving a more stable, efficient system with an enhanced user experience.
+  \item Designed and developed a mobile application in IONIC to manage entry to the FIAC 2023 event, addressing the challenge of ensuring efficient and secure control of attendees. My task involved creating a solution that allowed scanning the identity card code and registering the information in a database via an API, which facilitated event management for the organizers.
+  \item Resolved incidents and optimized the user experience in a municipal system by providing specialized technical support, guiding individuals who had difficulties using various system functionalities. My responsibilities included generating "transparency reports" requested by citizens. I succeeded in improving user satisfaction and ensuring transparent access to public information, thereby strengthening trust in the system.
+\end{itemize}
+
+\textbf{Intern} {OneConsultores SpA} -- Talca, Maule Region, Chile \hfill January 2021 -- March 2021 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Modernized a legacy system by updating maintainers with VueJS 3, NodeJS, TypeORM, and PostgreSQL, integrating webservices to optimize the circulation permits system; I implemented improvements in views and functionalities, creating intuitive interfaces, resulting in a faster, more stable, and user-friendly system, reducing processing times and facilitating permit management for municipal officials.
+\end{itemize}
+
+\section*{Additional Participation}
+\textbf{Competitor} {ACM-ICP latin american programming contest} \hfill November 2017 \\
+\textbf{Competitor} {ACM-ICP latin american programming contest} \hfill November 2016 \\
+\vspace{-9pt}
+
+% projects section
+\section*{Projects}
+\textbf{Restaurant Full-Stack} \hfill \href{https://github.com/Abezzi/restaurant-fullstack/}{github.com/abezzi/restaurant-fullstack} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item System for managing restaurants or similar services, featuring: monorepo, POS, user profiles, token-based login, i18n, throttling, authority roles, role-based navigation, dark mode, and company customization.
+\end{itemize}
+\textbf{FitnessApp Hybrid Mobile} \hfill \href{https://github.com/Abezzi/sofi-workout/}{github.com/abezzi/sofi-workout} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Developed a cross-platform workout tracker mobile app featuring: authentication, routine/exercise creation, draggable workouts, timer with step tracking, history calendar, routine sharing, i18n, dark mode.
+\end{itemize}
+
+\vspace{-9pt}
+
+% education section
+\section*{Education}
+\textbf{Universidad Cat\'olica del Maule} -- Executive Computer Engineering \hfill \\
+
+\end{document}
